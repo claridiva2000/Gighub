@@ -25,6 +25,13 @@ textarea {
     max-width: 280px;
 }
 
+span.field-validation-error {
+    color: #e80e0e;
+    font-weight: bold;
+}
+
+
+
 /*Bootstrap Overrides*/
 body,
 h1,
