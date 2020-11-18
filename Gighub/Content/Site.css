@@ -49,20 +49,26 @@ h6,
     font-family: Lato, "Helvetica Neue", Helvetica, Arial, sans-serif;
   
 }
-.navbar-inverse {
-    background-color: #ff4342;
-    border-color: #ff4342;
+.bg-light {
+    background-color: #ff7866 !important;
 }
-.navbar-inverse .navbar-nav >li>a {
-    color: #ffffff;
+.navbar-light .navbar-brand {
+    color: white;
 }
-.navbar-inverse .navbar-brand {
-    color: #ffffff;
+a {
+    color: white;
 }
-.navbar-brand {
-    color: #ffffff;
-    font-weight: bold;
+.navbar-light .navbar-nav .nav-link {
+    color: white;
 }
+
+.navbar-light .navbar-nav .nav-link {
+    color: white;
+}
+.navbar-light .navbar-nav .nav-link :hover{
+    color: white;
+}
+
 .form-group {
     margin-bottom: 20px;
 }
@@ -87,7 +93,7 @@ h6,
     -ms-border-radius: 9px;
     border-radius: 9px;    
 }
-.navbar-inverse .navbar-nav > .open > a, .navbar-inverse .navbar-nav > .open > a:hover, .navbar-inverse .navbar-nav > .open > a:focus {
+.nav-item .dropdown .open, a:focus {
     background-color: rgba(205,40,39,0.55);
 }
 .dropdown-menu {
@@ -98,3 +104,4 @@ h6,
     border-top-color: #ffffff;
     border-bottom-color: #ffffff;
 }
+
