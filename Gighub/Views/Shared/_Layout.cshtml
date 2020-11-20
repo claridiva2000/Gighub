@@ -21,31 +21,14 @@
     </script>
 </head>
 <body>
-@*<div class="navbar navbar-inverse navbar-fixed-top">
-        <div class="container">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                @Html.ActionLink("Gig Hub", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
-            </div>
-            <div class="navbar-collapse collapse">
-                <ul class="nav navbar-nav">
-                    <li>@Html.ActionLink("Add a Gig", "Create", "Gigs")</li>
-                </ul>
-                @Html.Partial("_LoginPartial")
-            </div>
-        </div>
-    </div>*@
+
 <nav class="navbar navbar-expand-md navbar-light bg-light">
    @Html.ActionLink("Gig Hub", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarNavDropdown">
-        <ul class="navbar-nav" >
+        <ul class="navbar-nav" id="drop_menu_right" >
             <li class="nav-item active">
                 <span class="nav-link"> @Html.ActionLink("Add a Gig", "Create", "Gigs")</span>
             </li>
