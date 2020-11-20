@@ -6,6 +6,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using System.Web;
 using System.Web.Mvc;
+using Gighub.ViewModels;
 
 namespace Gighub.Controllers
 {
@@ -139,6 +140,8 @@ namespace Gighub.Controllers
             return View();
         }
 
+
+
         //
         // POST: /Account/Register
         [HttpPost]
@@ -154,6 +157,7 @@ namespace Gighub.Controllers
                     Email = model.Email,
                     UserName = model.Email
                 };
+
                 var result = await UserManager.CreateAsync(user, model.Password);
                 if (result.Succeeded)
                 {
