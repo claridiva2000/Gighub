@@ -1,5 +1,4 @@
 ﻿body {
-    padding-top: 50px;
     padding-bottom: 20px;
     font-family: Lato, "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-size: 17px;
@@ -52,19 +51,13 @@ h6,
     font-family: Lato, "Helvetica Neue", Helvetica, Arial, sans-serif;
   
 }
-.bg-light {
+.bg-primary {
     background-color: #ff7866 !important;
 }
-.navbar-light .navbar-brand {
-    color: white;
-}
 
-.navbar-light .navbar-nav .nav-link {
-    color: white;
-}
+.navbar-nav .nav-link  {
+    color:#ffffff
 
-.navbar-light .navbar-nav .nav-link :hover{
-    color: white;
 }
 
 .form-group {
@@ -112,6 +105,61 @@ h6,
 }
 .nav-link a {
     color: white;
+}
+
+/*Index styles*/
+.gigs {
+    /*border: 1px solid pink;*/
+    list-style: none;
+    margin-top: 30px;
+}
+.gigs >li {
+    /*border: 1px solid pink;*/
+    position: relative;
+    /*margin-bottom: 30px;*/
+}
+
+.gigs > li .details {
+    /*border: 1px solid pink;*/
+    position: relative;
+    top: -65px;
+    left: 75px;
+}
+
+.gigs >li .details .artists {
+    font-weight: bold;
+    display: block;
+}
+
+.gigs >li .details .genres {
+    font-size: 15px;
+}
+
+.gigs > li .date {
+    /*border: 1px solid pink;*/
+    background: red;
+    color: white;
+    text-align: center;
+    width: 65px;
+    -ms-border-radius: 8px;
+    border-radius: 8px;
+}
+
+.gigs >li .date .month {
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: bold;
+    padding: 2px 6px;
+}
+
+.gigs >li .date .day {
+    background: #f7f7f7;
+    color: #333;
+    font-size: 20px;
+    padding: 6px 12px;
+    /*-ms-border-radius: 0 0 8px 8px;
+    border-radius: 0 0 8px 8px;
+    border: 2px solid #f7f7f7;*/
 }
 
 
